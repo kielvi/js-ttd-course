@@ -1,1 +1,3 @@
-a = 1 a = 2
+const a = 1;
+
+var a = 2;
