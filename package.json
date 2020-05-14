@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "pre-push": "npm run lint",
+    "pre-commit": "npm test",
+    "pre-push": "npm test",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
