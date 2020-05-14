@@ -4,6 +4,8 @@
   "description": "Biblioteca do curso de JS com TDD na prática",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +14,10 @@
     "tdd"
   ],
   "author": "Kielvi Del Santoro <kielvi@gmail.com> (http://192.168.0.58:8700/js-ttd-course)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5"
+  },
+  "dependencies": {}
 }
